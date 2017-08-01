@@ -1,0 +1,38 @@
+[
+  {
+    "key" : 0,
+    "label": "Otomobil",
+    "speed": 120
+  },
+  {
+    "key" : 1,
+    "label": "Minibüs",
+    "speed": 100
+  },
+  {
+    "key" : 2,
+    "label": "Otobüs",
+    "speed": 100
+  },
+  {
+    "key" : 3,
+    "label": "Kamyonet",
+    "speed": 95
+  },
+  {
+    "key" : 4,
+    "label": "Panelvan",
+    "speed": 110
+  },
+  {
+    "key" : 5,
+    "label": "Motosiklet (L3)",
+    "speed": 100
+  },
+ {
+      "key" : 6,
+      "label": "Motosiklet (L4, L5, L7)",
+      "speed": 80
+  },
+
+]

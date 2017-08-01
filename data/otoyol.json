@@ -1,0 +1,27 @@
+[
+  {
+    "key" : 0,
+    "label": "ANADOLU OTOYOLU"
+  },
+  {
+    "key" : 1,
+    "label": "AVRUPA OTOYOLU"
+  },
+  {
+    "key" : 2,
+    "label": "CESME OTOYOLU"
+  },
+  {
+    "key" : 3,
+    "label": "AYDIN OTOYOLU"
+  },
+  {
+    "key" : 4,
+    "label": "URFA OTOYOLU"
+  },
+  {
+    "key" : 5,
+    "label": "MERSİN OTOYOLU"
+  },
+  
+]

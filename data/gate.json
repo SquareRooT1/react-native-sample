@@ -1,0 +1,398 @@
+{
+	"ANADOLU":{
+		"data": [
+			{
+				"key": 1,
+				"label": "ANADOLU"
+			},
+			{
+				"key": 2,
+				"label": "SAMANDIRA"
+			},
+			{
+				"key": 3,
+				"label": "SULTANBEYLİ"
+			},
+			{
+				"key": 4,
+				"label": "MECİDİYE"
+			},
+			{
+				"key": 5,
+				"label": "KURTKÖY"
+			},
+			{
+				"key": 6,
+				"label": "ORHANLI"
+			},
+			{
+				"key": 7,
+				"label": "Ş.PINAR"
+			},
+			{
+				"key": 8,
+				"label": "GEBZE"
+			},
+			{
+				"key": 9,
+				"label": "MUALLİMKÖY"
+			},
+			{
+				"key": 10,
+				"label": "DİL İSKELESİ"
+			},
+			{
+				"key": 11,
+				"label": "DOĞU HEREKE"
+			},
+			{
+				"key": 12,
+				"label": "KÖRFEZ"
+			},
+			{
+				"key": 13,
+				"label": "DOĞU İZMİT"
+			},
+			{
+				"key": 14,
+				"label": "KANDIRA"
+			},
+			{
+				"key": 15,
+				"label": "SAPANCA"
+			},
+			{
+				"key": 16,
+				"label": "ADAPAZARI"
+			},
+			{
+				"key": 17,
+				"label": "AKYAZI"
+			},
+			{
+				"key": 18,
+				"label": "HENDEK"
+			},
+			{
+				"key": 19,
+				"label": "DÜZCE"
+			},
+			{
+				"key": 20,
+				"label": "KAYNAŞLI"
+			},
+			{
+				"key": 21,
+				"label": "ABANT"
+			},
+			{
+				"key": 22,
+				"label": "BOLU BATI"
+			},
+			{
+				"key": 23,
+				"label": "ÇAYDURT"
+			},
+			{
+				"key": 24,
+				"label": "YENİÇAĞA"
+			},
+			{
+				"key": 25,
+				"label": "DÖRTDİVAN"
+			},
+			{
+				"key": 26,
+				"label": "GEREDE"
+			},
+			{
+				"key": 27,
+				"label": "PELİTÇİK (ÇAMLIDERE)"
+			},
+			{
+				"key": 28,
+				"label": "ÇELTİKÇİ (KIZILCAHAMAM)"
+			},
+			{
+				"key": 29,
+				"label": "AKINCI"
+			}
+		]
+	},
+	"AVRUPA": {
+		"data": [
+			{
+				"key": 1,
+				"label": "MAHMUTBEY"
+			},
+			{
+				"key": 2,
+				"label": "ISPARTAKULE"
+			},
+			{
+				"key": 3,
+				"label": "AVCILAR"
+			},
+			{
+				"key": 4,
+				"label": "ESENYURT"
+			},
+			{
+				"key": 5,
+				"label": "HADIMKÖY"
+			},
+			{
+				"key": 6,
+				"label": "ÇATALCA"
+			},
+			{
+				"key": 7,
+				"label": "K.BURGAZ"
+			},
+			{
+				"key": 8,
+				"label": "SELİMPAŞA"
+			},
+			{
+				"key": 9,
+				"label": "SİLİVRİ"
+			},
+			{
+				"key": 10,
+				"label": "KINALI"
+			},
+			{
+				"key": 11,
+				"label": "ÇERKEZKÖY"
+			},
+			{
+				"key": 12,
+				"label": "ÇORLU"
+			},
+			{
+				"key": 13,
+				"label": "SARAY"
+			},
+			{
+				"key": 14,
+				"label": "LÜLEBURGAZ"
+			},
+			{
+				"key": 15,
+				"label": "BABAESKİ"
+			},
+			{
+				"key": 16,
+				"label": "HAVSA"
+			},
+			{
+				"key": 17,
+				"label": "EDİRNE"
+			}
+		]
+	},
+	"CESME":{
+		"data": [
+			{
+				"key": 1,
+				"label": "SEFERHİSAR"
+			},
+			{
+				"key": 2,
+				"label": "URLA"
+			},
+			{
+				"key": 3,
+				"label": "KARABURUN"
+			},
+			{
+				"key": 4,
+				"label": "ZEYTİNLER"
+			},
+			{
+				"key": 5,
+				"label": "ALAÇATI"
+			},
+			{
+				"key": 6,
+				"label": "ÇEŞME"
+			}
+		]
+	},
+	"AYDIN": {
+		"data": [
+			{
+				"key": 1,
+				"label": "IŞIKKENT"
+			},
+			{
+				"key": 2,
+				"label": "TAHTALIÇAY"
+			},
+			{
+				"key": 3,
+				"label": "TORBALI"
+			},
+			{
+				"key": 4,
+				"label": "BELEVİ"
+			},
+			{
+				"key": 5,
+				"label": "GERMENCİK"
+			},
+			{
+				"key": 6,
+				"label": "AYDIN BATI"
+			}
+		]
+	},
+	"URFA":{
+		"data": [
+			{
+				"key": 1,
+				"label": "ADANA DOĞU ALIN"
+			},
+			{
+				"key": 2,
+				"label": "CEYHAN"
+			},
+			{
+				"key": 3,
+				"label": "TOPRAKKALE"
+			},
+			{
+				"key": 4,
+				"label": "OSMANİYE"
+			},
+			{
+				"key": 5,
+				"label": "OSMANİYE ORGANİZE SANAYİ"
+			},
+			{
+				"key": 6,
+				"label": "ERZİN"
+			},
+			{
+				"key": 7,
+				"label": "SERBEST BÖLGE"
+			},
+			{
+				"key": 8,
+				"label": "DÖRTYOL"
+			},
+			{
+				"key": 9,
+				"label": "PAYAS"
+			},
+			{
+				"key": 10,
+				"label": "İSKENDERUN"
+			},
+			{
+				"key": 11,
+				"label": "DÜZİÇİ"
+			},
+			{
+				"key": 12,
+				"label": "BAHÇE"
+			},
+			{
+				"key": 13,
+				"label": "KÖMÜRLER"
+			},
+			{
+				"key": 14,
+				"label": "NARLI"
+			},
+			{
+				"key": 15,
+				"label": "G.ANTEP BATI"
+			},
+			{
+				"key": 16,
+				"label": "G.ANTEP KUZEY"
+			},
+			{
+				"key": 17,
+				"label": "G.ANTEP DOĞU"
+			},
+			{
+				"key": 18,
+				"label": "NİZİP"
+			},
+			{
+				"key": 19,
+				"label": "BİRECİK"
+			},
+			{
+				"key": 20,
+				"label": "SURUÇ"
+			},
+			{
+				"key": 21,
+				"label": "ŞANLIURFA"
+			}
+		]
+	},
+	"MERSİN":{
+		"data": [
+			{
+				"key": 1,
+				"label": "NİĞDE"
+			},
+			{
+				"key": 2,
+				"label": "NİĞDE KUZEY"
+			},
+			{
+				"key": 3,
+				"label": "GÖLCÜK"
+			},
+			{
+				"key": 4,
+				"label": "KEMERHİSAR"
+			},
+			{
+				"key": 5,
+				"label": "EMİNLİK"
+			},
+			{
+				"key": 6,
+				"label": "POZANTI (KUZEY)"
+			},
+			{
+				"key": 7,
+				"label": "POZANTI (GÜNEY)"
+			},
+			{
+				"key": 8,
+				"label": "TEKİR"
+			},
+			{
+				"key": 9,
+				"label": "ÇAMALAN"
+			},
+			{
+				"key": 10,
+				"label": "YENİCE"
+			},
+			{
+				"key": 11,
+				"label": "ADANA BATI"
+			},
+			{
+				"key": 12,
+				"label": "ÇAMTEPE"
+			},
+			{
+				"key": 13,
+				"label": "TARSUS"
+			},
+			{
+				"key": 14,
+				"label": "MERSİN ALIN"
+			}
+		]
+	}
+}
