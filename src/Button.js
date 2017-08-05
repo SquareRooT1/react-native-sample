@@ -27,6 +27,7 @@ const styles = {
     flex: 1,
     alignSelf: 'stretch',
     alignItems:'center',
+    justifyContent:'center',
     backgroundColor: '#4CB8C4',
     borderRadius: 7,
     borderWidth: 1,

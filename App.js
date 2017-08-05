@@ -49,6 +49,7 @@ export default class App extends React.Component {
        require('./img/count.png'),
        require('./img/giris.png'),
        require('./img/guclu.png'),
+       require('./img/logo2.png'),
 
      ]);
 
@@ -93,7 +94,7 @@ export default class App extends React.Component {
     tabBarOptions : {
       activeTintColor: '#e91e63',
     }
-  } );
+  });
 
 
 

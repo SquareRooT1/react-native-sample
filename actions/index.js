@@ -24,3 +24,9 @@ export const removeOldTrip = (index) => {
       payload: index
     }
 }
+
+export const removeAllTrips = () => {
+    return {
+      type: 'remove_AllTrips'
+    }
+}

@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "otobansayac",
+    "name": "Otoyol Süresi",
     "description": "project for calculating best options",
-    "slug": "otobansayac",
+    "slug": "otoyol-suresi",
     "privacy": "public",
     "sdkVersion": "18.0.0",
     "version": "1.0.0",
@@ -24,11 +24,11 @@
     },
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.squareroot.otobansayac"
+      "bundleIdentifier": "com.squareroot.otoyolsuresi"
     },
     "android": {
-      "package": "com.squareroot.otobansayac",
-      "icon": "./assets/icons/loading.png"
+      "package": "com.squareroot.otoyolsuresi",
+      "icon": "./assets/icons/logo.png"
     }
   }
 }

@@ -31,21 +31,24 @@ class OldTripsScreen extends Component {
 	}
 
 
+
   static navigationOptions = ({ navigation }) => {
+    const { params = {} } = navigation.state;
     return {
-      headerTitle : 'Otoban Sayaç',
-      headerRight: <Icon
-        iconStyle = {styles.iconStyle}
-        name='info-outline'
-        color="rgba(0,122,255,1)"
-        onPress={() => navigation.navigate('info')}
-        />,
-      headerLeft : null,
+      headerTitle : 'Otoyol Süresi',
+      headerLeft: <Text style={{fontSize:12,fontWeight:'500', color: '#fff', width:70, alignItems:'center',textAlign:'center',marginLeft:10}} onPress={() => navigation.navigate('info')}>Hakkımızda</Text>,
+      headerTitleStyle: {
+        fontSize : 21,
+        alignSelf :'center',
+        textAlign: 'center'
+      },
+        headerRight: <Text style={{fontSize:12,fontWeight:'500', color: '#fff', width:60, alignItems:'center',textAlign:'center',marginRight:10 }} onPress={()=> params.handleRemove()}> Kayıtlı verileri sil </Text>,
         headerTintColor: "#fff",
         headerStyle : {
           marginTop : Platform.OS === 'android' ? 24 : 0,
           paddingBottom: 10,
-          backgroundColor : "#267689"
+          backgroundColor : "#267689",
+
         },
         tabBarVisible : false,
     }
@@ -66,6 +69,14 @@ class OldTripsScreen extends Component {
     }
 
   }
+
+  _removeAllItems() {
+      this.props.removeAllTrips();
+    }
+
+    componentDidMount() {
+     this.props.navigation.setParams({ handleRemove: this._removeAllItems.bind(this) });
+   }
 
   removeItem = (item,secId,rowId) => {
       this.props.removeOldTrip(rowId);
@@ -168,7 +179,7 @@ const styles = {
     flex :1
   },
   iconStyle : {
-    marginRight : 10
+    marginLeft : 10
   },
 	rowFront: {
 		alignItems: 'center',
@@ -177,13 +188,16 @@ const styles = {
 		borderBottomColor: '#95a5a6',
 		borderBottomWidth: 2,
 		justifyContent: 'space-between',
-		height: 50,
+		height: 60,
 	},
   warningText : {
     color : '#e8210b',
-    fontSize :14,
-    alignItems : 'flex-end',
-    paddingRight:10
+    fontSize :16,
+    fontWeight:'500',
+    width: width / 3 - 10 ,
+    justifyContent : 'flex-end',
+    textAlign:'right',
+    paddingRight:5
   },
 	rowBack: {
 		alignItems: 'center',
@@ -194,9 +208,11 @@ const styles = {
 		paddingLeft: 15,
 	},
   removeText :{
-    paddingLeft: 10,
+    paddingLeft: 5,
     alignContent:'flex-start',
-    fontSize :14,
+    fontSize :16,
+    fontWeight:'500',
+    width: width * 2 / 3 + 5,
     color : '#000'
   },
   skipButton:{
@@ -211,6 +227,8 @@ const styles = {
     marginTop:50,
     backgroundColor :'rgba(0,0,0,0)',
     alignItems:'center',
+    justifyContent:'center',
+    textAlign:'center',
     alignSelf :'center',
     color: '#C9CFD4'
   },

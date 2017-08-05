@@ -12,6 +12,9 @@ export default (state = [] ,action) => {
         return [...state.slice(0,parseInt(action.payload)),
         ...state.slice(parseInt(action.payload)+1)];
         break;
+      case 'remove_AllTrips':
+        return [];
+        break;
       default:
       return state;
     }

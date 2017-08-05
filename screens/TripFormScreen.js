@@ -232,11 +232,12 @@ const styles ={
    width : width,
  },
  pickerLabel:{
-  fontSize: 18,
-  fontWeight: '500',
+  fontSize: 17,
+  fontWeight: '700',
   textAlign : 'justify',
   backgroundColor :"rgba(0,0,0,0)",
   alignItems: 'center',
+  justifyContent:'center',
   height :40,
   paddingTop: 5,
   width : 140
@@ -253,11 +254,13 @@ const styles ={
    resizeMode: 'cover'
    },
 textInputStyle:{
-   justifyContent: 'flex-start',
+   justifyContent: 'center',
    alignItems :'center',
    width: width-150,
    paddingLeft : 5,
-   fontSize : 16,
+   textAlign:'center',
+   fontSize : 18,
+   fontWeight:'600',
    color : "#fff",
    height:30
  }

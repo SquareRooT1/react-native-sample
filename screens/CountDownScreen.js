@@ -1,6 +1,6 @@
 import React ,{ Component } from 'react';
 import {View , Text, StyleSheet,Dimensions, Platform, Image } from 'react-native';
-import { Constants, Permissions, Notifications } from 'expo';
+import { Constants, Permissions, Notifications, FacebookAds } from 'expo';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 import PercentageCircle from 'react-native-percentage-circle';
@@ -44,6 +44,18 @@ class CountDownScreen extends Component {
              );
              return;
              }
+
+            if(Platform.OS === 'android'){
+              FacebookAds.InterstitialAdManager.showAd('449422098768727_449426018768335')
+                 .then(didClick => {})
+                 .catch(error => {})
+            }else{
+              FacebookAds.InterstitialAdManager.showAd('449422098768727_449426618768275')
+                 .then(didClick => {console.log("clicked ad");})
+                 .catch(error => {console.log("error:", error);})
+            }
+
+
          }
 
 
@@ -162,18 +174,42 @@ class CountDownScreen extends Component {
           }
         }
 
+        _renderBanner(){
+            if(Platform.OS === 'android'){
+              return(
+              <FacebookAds.BannerView
+                placementId="449422098768727_449423225435281"
+                type="standard"
+                onPress={() => console.log('click')}
+                onError={(err) => console.log('error', err)}
+              />
+          )
+          }else{
+            return(
+              <FacebookAds.BannerView
+                placementId="449422098768727_449426432101627"
+                type="standard"
+                onPress={() => console.log('click')}
+                onError={(err) => console.log('error', err)}
+              />
+            )
+
+
+          }
+        }
+
         _renderCircle(){
           if(Platform.OS === 'android'){
             return(
                 <AndroidCircle radius={105} percent={this.state.percent} borderWidth ={12} color={"#640204"} innerColor={"#7E8B7D"}>
-                  <Text style={[styles.percentText]}> {this.state.status == "idle" ? "Sayacı Başlatınız" :  this.state.percent + " %"  }</Text>
+                  <Text style={[styles.percentText]}> {this.state.status == "idle" ? "Sayacı Başlatınız" :  " % " + this.state.percent  }</Text>
                   <Text style={[styles.countDownText]}>{this.state.humanize ? this.state.humanize : this.secondToHuminzeString(this.props.selectedRoute.Km) } </Text>
                </AndroidCircle>
             )
           }else{
             return(
                 <PercentageCircle radius={105} percent={this.state.percent} borderWidth ={12} color={"#640204"} innerColor={"#7E8B7D"}>
-                  <Text style={[styles.percentText]}> {this.state.status == "idle" ? "Sayacı Başlatınız" :  this.state.percent + " %"  }</Text>
+                  <Text style={[styles.percentText]}> {this.state.status == "idle" ? "Sayacı Başlatınız" : " % " + this.state.percent  }</Text>
                   <Text style={[styles.countDownText]}>{this.state.humanize ? this.state.humanize : this.secondToHuminzeString(this.props.selectedRoute.Km) } </Text>
                </PercentageCircle>
             )
@@ -202,22 +238,24 @@ class CountDownScreen extends Component {
            <Card style={styles.cardStyle}>
             <Text style={styles.cardText}>Toplam Mesafe</Text>
             <View style={{flexDirection:'row',justifyContent :'center', alignItems:'flex-end'}}>
-            <Text style={{fontSize:21, fontWeight: '700',color:'#fff'}}>{this._ınfoKM()} </Text>
-            <Text style={{fontSize:13,fontWeight:'700', color :'#fff',paddingBottom:2 }}>KM</Text>
+            <Text style={{fontSize:24, fontWeight: '700',color:'#fff'}}>{this._ınfoKM()} </Text>
+            <Text style={{fontSize:18,fontWeight:'700', color :'#fff',paddingBottom:2 }}>KM</Text>
             </View>
            </Card>
            <Card style={styles.cardStyle}>
             <Text style={styles.cardText}>Tahmini Varış</Text>
             <View style={{flexDirection:'row',justifyContent :'center', alignItems:'flex-end'}}>
-            <Text style={{fontSize:21, fontWeight: '700',color:'#fff'}}>{this.state.humanizeEndTime} </Text>
+            <Text style={{fontSize:24, fontWeight: '700',color:'#fff',textAlign:'center'}}>{this.state.humanizeEndTime} </Text>
             </View>
            </Card>
           </View>
+
           <View style={{height: 70, width : width ,paddingTop:20}}>
             <Button onPress={() => this._startTimer()}>{this._renderButton()}</Button>
           </View>
         </View>
       </View>
+      {this._renderBanner()}
       </Image>
     );
   }
@@ -234,6 +272,7 @@ const styles ={
   percentText: {
     fontSize: 21,
     paddingBottom : 15,
+    fontWeight:'600',
     alignItems : 'center',
     alignSelf: 'center',
     color: "#fff"
@@ -241,7 +280,7 @@ const styles ={
   },
   countDownText :{
     fontSize : 24,
-    fontWeight : '500',
+    fontWeight : '600',
     alignItems : 'center',
     alignSelf :'center',
     color: "#fff"
@@ -274,9 +313,9 @@ const styles ={
 
   },
   cardText:{
-    fontSize : 13,
+    fontSize : 14,
     color :'#fff',
-    fontWeight :'500',
+    fontWeight :'700',
     paddingLeft:10,
     paddingRight : 10
   }

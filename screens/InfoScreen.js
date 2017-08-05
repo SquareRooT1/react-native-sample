@@ -20,7 +20,11 @@ class InfoScreen extends Component {
       <Image source={require('../img/form.png')}
       style={styles.backgroundImage}>
         <View style={styles.container}>
-          <Image source={require('../img/guclu.png')} style={{width:170, height:170}}/>
+          <Text style={{fontSize: 32, color:'#000', fontWeight:'700', textAlign:'center', justifyContent:'center', backgroundColor:'rgba(0,0,0,0)',paddingBottom:40}}>Ana sponsor </Text>
+          <Image source={require('../img/guclu.png')} style={{width:150, height:150,marginBottom:10}}/>
+          <View style={{borderBottomWidth:1, borderColor:'#D4E1F3', width:270 }}></View>
+          <Image source={require('../img/logo2.png')} style={{width:150, height:150, marginTop : 10}}/>
+          <Text style={{backgroundColor:'rgba(0,0,0,0)', textAlign:'center',fontSize:19, marginTop: 20,alignSelf:'center',fontWeight:'600'}}>İletişim :  otoyolsuresi@gmail.com </Text>
          </View>
        </Image>
 
